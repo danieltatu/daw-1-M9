@@ -1,0 +1,77 @@
+@import "reset.css";
+
+a{
+    text-decoration: none;
+    font-style: inherit;
+    color: black;
+}
+
+header , footer {
+
+    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(250, 250, 250);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-image: url(/img/ces.jpg);
+    color: #ffff;
+}
+
+.links a {
+    padding: 1rem;
+    border: 1px solid darkgoldenrod;
+    color: aliceblue;
+}
+
+.links a:hover , .links a:focus{
+    background-color: green;
+}
+
+.links{
+    display: flex;
+    gap: 1rem ; 
+    margin: 1rem; 
+}
+
+header h1 {
+    text-align: right;
+    margin-top:-80px;
+}
+
+header h2{
+    text-align: right;
+    margin-bottom: 1rem;
+
+}
+
+footer h3 {
+    text-align: right;
+    margin: 1rem;
+}
+
+.content{
+    display: flex;
+    gap:1rem;
+    margin: 2rem;
+    color: aliceblue;
+}
+
+.content a {
+    padding: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+    color: aliceblue;
+    margin: 40px;
+}
+
+.content a img{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+}
+
+.content a:hover , .content a:focus{
+    background-color: coral;
+}
+
