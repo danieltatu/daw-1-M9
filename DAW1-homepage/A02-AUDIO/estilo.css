@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./img/ces.jpg);
+}
+.intro{
+    position: absolute;
+    width: 350px;
+}
+.intro .int{
+    position: relative;
+    width: 100%;
+    height:400px;
+}
+
+.intro .int img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro audio{
+    width: 100%;
+}

@@ -1,0 +1,107 @@
+
+* {
+
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+body{
+
+    background-image: url("./imagen/ces.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+
+.cabeza{
+
+    font-size: 100px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    padding: 35px;
+ 
+}
+
+.contenedor{
+   
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    display: grid;
+    align-items: flex-start;
+    padding: 5px 5%;
+    color: #2980b9;
+}
+
+.contenedor .main{
+
+    background: rgb(38, 221, 18);
+    border-radius: 5px;
+    padding: 10px;
+    color: #2980b9;
+}
+
+.contenedor .main video{
+
+    width: 100%;
+    border-radius: 30px;
+    color: #2980b9;
+}
+
+.contenedor .main .titulo{
+
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #2980b9;
+}
+
+.contenedor .lista{
+
+    background: rgb(38, 221, 18);
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+    color: #2980b9;
+
+}
+
+.contenedor .lista .primero video{
+
+    border-radius: 15px;
+    width: 200px;
+    
+}
+
+.contenedor .lista .primero{
+
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: rgb(251, 177, 86);
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0,.1);
+    gap: 25px;
+}
+
+@media (max-width:425px){
+
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:953px){
+
+    .contenedor{
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+}
+

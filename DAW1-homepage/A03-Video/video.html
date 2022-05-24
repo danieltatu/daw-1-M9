@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOTETUBE</title>
+    <link rel="stylesheet" href="./system.css">
+
+</head>
+
+<body>
+
+    <h3 class="cabeza">VIDEOS CHAMPIONS</h3>
+
+    <div class="contenedor">
+
+        <div class="main">
+            <div class="video">
+                <video src="./videos/video-1.mp4" controls muted autoplay></video>
+                <h3 class="titulo">1. REAL MADRID</h3>
+            </div>
+        </div>
+
+        <div class="lista">
+            
+            <div class="primero">
+                <video src="./videos/video-1.mp4" muted></video>
+                <h3 class="titulo">2. REAL MADRID </h3>
+            </div>
+
+            <div class="primero">
+                <video src="./videos/video-2.mp4" muted></video>
+                <h3 class="titulo">3. CAMPO FUTBOL</h3>
+            </div>
+
+            <div class="primero">
+                <video src="./videos/video-3.mp4" muted></video>
+                <h3 class="titulo">4. CUATRO DEPORTES </video></h3>
+            </div>
+
+            <div class="primero">
+                <video src="./videos/video-4.mp4" muted></video>
+                <h3 class="titulo">5. MARADONA </video></h3>
+            </div>
+
+            <div class="primero">
+                <video src="./videos/video-5.mp4" muted></video>
+                <h3 class="titulo">6. CHAMPIONS </video></h3>
+            </div>
+
+            <div class="primero">
+                <video src="./videos/video-6.mp4" muted></video>
+                <h3 class="titulo">7.. CAMPO ANTI COV </video></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let listVideo = document.querySelectorAll('.lista .primero');
+        let mainVideo = document.querySelector('.main video');
+       
+        listVideo.forEach(video => {
+            video.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                video.classList.add('active');
+                if (video.classList.contains('active')) {
+                    let src = video.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = video.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+</body>
+</html>
